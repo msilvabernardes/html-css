@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>A tag &lt;code&gt; serve para formatar os caracteres de uma forma mais legível quando você quiser apresentar um código no seu texto.</p>
+    <p>Exemplo: O código a seguir "document.getElementaryById('teste')" foi escrito sem usar a tag &lt;code&gt;</p>
+    <p>Exemplo: O código a seguir "<code>document.getElementaryById('teste')</code>" foi escrito usando a tag &lt;code&gt;</p>
+    <br>
+    <p>Também é possível escrever códigos no seu texto no mesmo padrão de formatação que é observado nas linhas de código usando a tag O código a seguir "document.getElementaryById('teste')" foi escrito sem usar a tag &lt;pre&gt; Exemplo:</p>
+<p>
+    <pre>
+        <code>
+num=int(input('Digite um numero'))
+if num%2==0:
+    print(f'O numero {num} é PAR')
+else:
+    print(f'O numero {num} é IMPAR')
+print(f'fim fo programa')
+        </code>
+    </pre>
+</p>
+    <h2>Citações Simples</h2>
+    <p>A tag &lt;q&gt; pode ser usada para fazer uma citação em um texto. Ex: Como diria um pai de um amigo, <q>O computador é um burro muito rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>É possível fazer uma citação mais elaborada usando a tag &lt;blockote&gt;</p>
+    <p>Segundo Rob Nelson, chefe de desenvolvimento do GTA 6 e co-diretor da Rockstar North:</p>
+    <blockquote cite="https://www.tecmundo.com.br/voxel/505248-rockstar-revela-detalhes-ineditos-de-gta-6-em-entrevista-e-promete-mundo-imersivo.htm">
+    A intenção é criar um universo em que as ações de Jason e Lucia tenham consequências mais perceptíveis, incluindo reações de NPCs a situações que antes poderiam passar despercebidas.     
+    </blockquote> <!--quando colocado "cite" dentro da tag de blockote, visualmente não mudará nada. O que vai mudar é que o google ou sites de buscas saberão que vc está referenciando uma fala contida naquele documento do link-->
+
+    <h2>Abreviações</h2>
+    <p>A tag &lt;abbr&gt; é utilizada para explicar abreviações. Ex: Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou curtindo pakas</p>
+</body>
+</html>

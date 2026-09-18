@@ -1,0 +1,17 @@
+   @charset "UTF-8";
+ 
+        body{
+            background-color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            color: aliceblue;
+        }
+        h1{
+            font-size: 80px;
+            background-color: black;
+            color: rgb(238, 21, 173);
+        }
+        h2{
+            font-size: 50px;
+            color: blue;
+        }

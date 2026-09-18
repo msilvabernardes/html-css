@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #4a7d9b, #4da0a3);
+}
+main{
+    background-color: white; /*Cor de fundo do texto contido em "main"*/
+    border-radius: 10px; /*Raio da borda da margem*/
+    width: 600px; /*Largura da margem*/
+    padding: 30px; /*Edita tamanho da margem*/
+    margin: auto; /*Deixa centralizado auomaticamente em qualquer tamanho de tela*/
+    box-shadow: 5px 5px 15px rgb(126, 46, 46); /*Aplica sombra na margem com a cor que foi selecionada. Os parâmetros "px" indicam, em sequência, quanto que essa sombra vai andar pra baixo, quanto que essa sombra vai andar pro lado e quanto que essa sombra irá se espalhar*/
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 20px;
+    color: #25565c;
+    text-shadow: 1px 1px 0px #5f8fa8;
+}

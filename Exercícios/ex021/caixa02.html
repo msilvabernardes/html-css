@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping TAGs</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px; /*Quando você coloca 10px apenas uma vez, ele vai entender que é 10px em todos os lados (up, right, bottom, left)*/
+            margin: 10px; /*idem comentário acima*/
+        }
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 3px 2px 12px 4px rgba(0, 0, 0, 0.952);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: rgb(88, 134, 88);
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+    </style>
+
+</head>
+<!--Na criação de sites, é comum pessoas criarem (que é uma tag box-level) uma dentro da outra com id's para diferenciação de cabeçalhos, seções, menus, rodapé, etc. Porém, no HTML5 temor grouping tags que simplificam isso e deixam o código muito mais semântico-->
+
+<body>
+    <header> <!--Cabeçalho (é uma div)-->
+        <h1>Meu site</h1>
+        <nav> <!--Seção da página dedicada a links de navegação (é uma div)-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    
+    <main> <!--conteúdo principal (é uma div)-->
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section> <!--Seção do seu conteúdo principal (é uma div)-->
+            <article> <!--Seção do seu conteúdo principal (é uma div)-->
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae a consequatur neque nemo doloribus? Voluptate molestias, commodi nesciunt exercitationem porro repellat nulla delectus ipsum inventore soluta eaque officia, amet expedita.</p>
+                <aside> <!--define uma seção de conteúdo relacionado com o tema (é uma div)-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        <section id="noticias"> <!--Seção do seu conteúdo principal (é uma div)-->
+
+        </section>
+    </main>
+    
+    <footer> <!--Tag para rodapé (é uma div)-->
+        Desenvolvido por Mateus Silva Bernardes
+    </footer>
+
+</body>
+</html>  

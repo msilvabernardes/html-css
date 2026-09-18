@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*
+em HTML é id    = em CSS é # (só pode um elemento)
+em HTML é class = em CSS é . (pode vários elementos)
+*/
+
+body{
+    background-color: rgb(184, 184, 160);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    color: rgb(255, 0, 0);
+
+}
+h1#principal { /*Uma vez que foi dada uma identificação a esse h1, não é mais necessário identificá-lo aqui com h1. Basta digitar "#principal" que já funcionaria*/
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: black;
+    text-align: center;
+}
+.basico{
+    font-style: italic;
+    background-color: rgb(226, 43, 165);
+}
+.intermediario{
+    font-style: italic;
+    background-color: rgb(43, 86, 226);
+}
+.avancado{
+    font-style: italic;
+    background-color: rgb(43, 226, 58);
+}

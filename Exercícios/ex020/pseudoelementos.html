@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de pseudo-elementos</title>
+
+    <style>
+        body{
+            text-align:justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: lightslategrey;
+            text-decoration:none; /*Tira o sublinhado do link*/
+            font-size:1.5em;
+        }
+        a:visited{
+            color: rgb(185, 66, 66); /*pinta o link que você já visitou*/
+        }
+        a:hover{
+            color: rgb(24, 177, 19); /*pinta de verde o link no momento em que o mouse passa nele*/
+        }
+        a:active{
+            color: rgb(192, 192, 7); /*pinta de amarelo o link no momento em que vc clica nele*/
+        }
+        .especial{
+            background-color: aqua;
+        }
+        .especial::before{ /*pseudo-elemento que inclui caracteres antes do link identificado como especial*/
+            content: '>';
+        }
+        .especial::after{ /*pseudo-elemento que inclui caracteres depois do link identificado como especial*/
+            content: '<';
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Acesse os links abaixo</h1>
+    <h2>Quero um emprego em qualquer uma dessas empresas</h2>
+    <ul>
+        <li><a href="https://www.rockstargames.com" class="especial"  target="_blank" rel="external">Site da Rockstar</a></li>
+        <li><a href="https://www.ubisoft.com" target="_blank" rel="external">Site da Ubisoft</a></li>
+        <li><a href="https://www.ea.com" target="_blank" rel="external">Site da EA Games</a></li>
+        <li><a href="https://www.cdprojektred.com/en" target="_blank" rel="external">Site da CD Project</a></li>
+        <li><a href="https://www.capcom.com/" target="_blank" rel="external">Site da Capcom</a></li>
+
+    </ul>
+</body>
+</html>

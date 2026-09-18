@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando hover</title>
+    <style>
+        div > p { /*Lê-se parágrafo filho do div (parágrafo contido no div)*/
+            display: none; /*Este comando vai fazer esconder o texto do parágrafo definido em div em body*/
+        }
+
+        div:hover > p { /*sintaxe para referenciar um hover para o parágrafo contido dentro do div definido*/
+            display: block; /*Este comando vai fazer aparecer o texto que vc escondeu no comando acima, quando o cursor do mouse passar em cima de "Passe o mouse aqui"*/
+            color: aquamarine;
+            background-color: blueviolet;
+            width: 200px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Exemplo de hover</h1>
+        <div>
+            Passe o mouse aqui
+            <p>Comi o cu de quem tá lendo</p>
+        </div>    
+</body>
+</html>
