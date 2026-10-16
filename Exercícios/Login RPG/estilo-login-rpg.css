@@ -1,0 +1,21 @@
+@charset "UTF-8"
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: black url(imagens/fundo2.jpg) center top no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    }
+
+form {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: bisque;
+    left: 50%;
+    top: 50%;
+}

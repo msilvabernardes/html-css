@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilo-login-rpg.css">
 </head>
 <body>
-    
+    <form action="login.php">
+
+        <div class="login">
+
+            <label for="ilogin">Login</label>
+            <input type="email" name="login" id="ilogin" placeholder="seu e-mail" required autocomplete="on" maxlength="30">
+
+        </div>
+
+        <div class="senha">
+
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" placeholder="sua senha" required autocomplete="current-password">
+
+        </div>
+
+        <div>
+            <input id="entrar" type="submit" value="Entrar">
+            <a id="esqueci" href="esqueci.html">Esqueci a senha</a>
+        </div>
+
+    </form>
 </body>
 </html>
