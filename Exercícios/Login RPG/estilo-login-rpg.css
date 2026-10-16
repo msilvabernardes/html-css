@@ -3,19 +3,76 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
     background: black url(imagens/fundo2.jpg) center top no-repeat fixed;
     background-size: cover;
     position: relative;
+    height: 96vh;
     }
 
 form {
     position: absolute;
-    width: 50%;
+    width: 20%;
     height: 50%;
-    background-color: bisque;
+    background-color: rgba(255, 255, 255, 0.26);
     left: 50%;
     top: 50%;
+
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.233);
+    border-radius: 20px;
+    overflow: hidden;
+}
+p {
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
+    height: 50px;
+    padding: 10px;
+}
+.login {
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+}
+
+.login > label{
+    font-size: 1.1em;
+    width: 30px;
+}
+
+.login > input[type=email]{
+    font-size: 1.1em;
+    width: 60%;
+    height: 1.1em;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: aliceblue;
+}
+
+.senha{
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+}
+
+.senha > label{
+    font-size: 1.1em;
+    width: 30px;
+}
+
+.senha > input[type=password]{
+    font-size: 1.1em;
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: aliceblue;
 }
